@@ -2,6 +2,5 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    s={'name':'arun',
-       'age':14}
-    return render(request,'index.html',s)
+    n={'s':[1,2,3,4,5]}
+    return render(request,'index.html',n)
