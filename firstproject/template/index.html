@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="{% static '/css/style.css' %}">
 </head>
 <body>
-    <img src="{% static '/image/1.jpg' %}">
+    {% for k in m%}
+    <div>
+        <h1>hello</h1>
+        <h1>{{k.dep_name}}</h1>
+        <h1>{{k.dep_description}}</h1>
+    </div>
+    {% endfor%}
 </body>
 </html>
